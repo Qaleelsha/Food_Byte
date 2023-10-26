@@ -248,7 +248,7 @@ a {
 </style>
 <body>
     
-
+   
 <div class="container">
 
     <div class="row">
@@ -449,8 +449,8 @@ a {
 
             <div class="row my-4">
                 <div class="col">
-                    <a href="ecommerce-products.html" class="btn btn-link text-muted">
-                        <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping </a>
+                    <a href="./home.html" class="btn btn-link text-muted">
+                        <i class="bi bi-house-exclamation-fill me-1"></i> Home</a>
                 </div> <!-- end col -->
                 <div class="col">
                     <div class="text-end mt-2 mt-sm-0">
@@ -459,6 +459,8 @@ a {
                     </div>
                 </div> <!-- end col -->
             </div> <!-- end row-->
+
+            
         </div>
         <div class="col-xl-4">
             <div class="card checkout-order-summary">
@@ -477,7 +479,7 @@ a {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row"><img src="./public/img/butter chicken.png" alt="product-img" title="product-img" class="avatar-lg rounded"></th>
+                                    <th scope="row"><img src="./public/img/butter chicken.png" id="food-imf" alt="product-img" title="product-img" class="avatar-lg rounded"></th>
                                     <td>
                                         <h5 class="font-size-16 text-truncate"><a href="#" class="text-dark">Waterproof Mobile Phone</a></h5>
                                         <p class="text-muted mb-0">
@@ -487,11 +489,11 @@ a {
                                             <i class="bx bxs-star text-warning"></i>
                                             <i class="bx bxs-star-half text-warning"></i>
                                         </p>
-                                        <p class="text-muted mb-0 mt-1">$ 260 x 2</p>
+                                        <p class="text-muted mb-0 mt-1">Rs 260 x 2</p>
                                     </td>
-                                    <td>$ 520</td>
+                                    <td>Rs 520</td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th scope="row"><img src="./public/img/kabab-1 .png " alt="product-img" title="product-img" class="avatar-lg rounded"></th>
                                     <td>
                                         <h5 class="font-size-16 text-truncate"><a href="#" class="text-dark">Smartphone Dual Camera</a></h5>
@@ -504,13 +506,13 @@ a {
                                         <p class="text-muted mb-0 mt-1">$ 260 x 1</p>
                                     </td>
                                     <td>$ 260</td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <td colspan="2">
                                         <h5 class="font-size-14 m-0">Sub Total :</h5>
                                     </td>
                                     <td>
-                                        $ 780
+                                        Rs 520
                                     </td>
                                 </tr>
                                 <tr>
@@ -518,7 +520,7 @@ a {
                                         <h5 class="font-size-14 m-0">Discount :</h5>
                                     </td>
                                     <td>
-                                        - $ 78
+                                        - Rs 78
                                     </td>
                                 </tr>
 
@@ -527,7 +529,7 @@ a {
                                         <h5 class="font-size-14 m-0">Shipping Charge :</h5>
                                     </td>
                                     <td>
-                                        $ 25
+                                        Rs 25
                                     </td>
                                 </tr>
                                 <tr>
@@ -535,7 +537,7 @@ a {
                                         <h5 class="font-size-14 m-0">Estimated Tax :</h5>
                                     </td>
                                     <td>
-                                        $ 18.20
+                                        Rs 18.20
                                     </td>
                                 </tr>                              
                                     
@@ -544,7 +546,7 @@ a {
                                         <h5 class="font-size-14 m-0">Total:</h5>
                                     </td>
                                     <td>
-                                        $ 745.2
+                                        Rs 460.2
                                     </td>
                                 </tr>
                             </tbody>
@@ -597,9 +599,15 @@ a {
 
         // Create a new order object (you can customize this)
         const newOrder = {
-        orderNumber: '12345',
-        product: 'Example Product',
-        quantity: 2,
+            billingName,
+            billingEmail,
+            billingPhone,
+            billingAddress,
+            billingCountry,
+            billingCity,
+            zipCode,
+            shippingAddressValue,
+            paymentMethodValue
         };
 
         // Check if the 'orders' property exists, or create it if it doesn't
@@ -620,14 +628,20 @@ a {
 
         // Store the updated user object back in local storage
         localStorage.setItem('user', JSON.stringify(user));
-
-        // const newlist = JSON.parse(localStorage.getItem('user'));
-        // console.log(newlist.orders);
     }
 
 const submit = document.getElementById('submit');
 submit.addEventListener('click',() =>{
     getSelectedValues();
 });
+
+const imageElement = document.getElementById('');
+const itemID = document.querySelector('input[name="itemID"]').value;
+
+// New image source URL
+const newImageSrc = itemID;
+
+imageElement.setAttribute("src", newImageSrc);
+
 </script>
 </html>

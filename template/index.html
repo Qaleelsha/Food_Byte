@@ -38,7 +38,7 @@
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="index.html">
-            <img src="images/logo.svg" alt="logo" />
+            <img src="../public/img/icon-black.png" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.html">
             <img src="images/logo-mini.svg" alt="logo" />
@@ -363,8 +363,24 @@
               </ul>
             </div>
           </li>
+
+          <li class="nav-item nav-category">Your Orders</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#paid" aria-expanded="false" aria-controls="auth">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Orders</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="paid">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../paid.html" target="_blank"> Check Order </a></li>
+              </ul>
+            </div>
+          </li>
          
         </ul>
+
+        
       </nav>
       <!-- partial -->
       <div class="main-panel">
@@ -376,23 +392,9 @@
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false">Audiences</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false">Demographics</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="../home.html" target="_blank" role="tab" aria-selected="false">Home</a>
-                    </li>
+                    </li>               
                   </ul>
                   <div>
-                    <div class="btn-wrapper">
-                      <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a>
-                      <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a>
-                      <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
-                    </div>
                   </div>
                 </div>
                 <div class="tab-content tab-content-basic">
@@ -547,6 +549,8 @@
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+  <script>
+  </script>
 </body>
 
 </html>

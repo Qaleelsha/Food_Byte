@@ -251,10 +251,17 @@ input {
                     <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" id="reg-name" placeholder="Name" />
-                <input type="email" id="reg-email" placeholder="Email" />
+                <input type="text" id="reg-name" required placeholder="Name" />
+                <input type="email" id="reg-email" required placeholder="Email" />
                 <input type="password" id ="reg-passkey" placeholder="Password" />
                 <button id="reg-btn">Sign Up</button>
+				
+				<div class="form-check mt-3 ps-3">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label ms-3" for="flexCheckDefault">
+					 Are you following a <b>Diet Plan</b>?
+					</label>
+				  </div>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -266,8 +273,8 @@ input {
                     <a href="#" class="social"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" id="log-email" placeholder="Email" />
-                <input type="password" id="log-pass" placeholder="Password" />
+                <input type="email" id="log-email" required placeholder="Email" />
+                <input type="password" id="log-pass" required placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button id="log-btn">Sign In</button>
             </form>
@@ -282,13 +289,17 @@ input {
                 <div class="overlay-panel overlay-right">
                     <h1>Hello!</h1>
                     <p>Enter your personal details & let's start a journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button class="ghost"  id="signUp">Sign Up</button>
+					
                 </div>
             </div>
         </div>
     </div>
-    
-   
+
+	<a href="./home.html">
+		<button class=" btn btn-primary"  id="signUp">Home</button>
+	</a>
+
 
 </body>
 
